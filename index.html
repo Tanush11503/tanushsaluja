@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #enter{
+    font-size: 142%;
+    width: 43%;
+    position: absolute;
+    top: 48%;
+    left: 28%;
+}
+</style>
+
+<body>
+    <button id="enter">Enter</button>
+    <button id="login">Login</button>
+</body>
+<script>
+let a = document.getElementById("enter")
+let login = document.getElementById("login")
+
+login.hidden = true
+
+
+a.addEventListener("click", function(){
+    let win = window.prompt("Enter the password")
+    if(win=="1649f"){
+        login.hidden = false;
+        a.hidden = true;
+    }
+    else if(win!="1649f"){
+        console.log('ewf')
+        window.close();
+    }
+})
+</script>
+</html>
